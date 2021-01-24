@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <title> To Do List </title>
+    <head>
+        
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link rel = "stylesheet" href = "css/getItems.css">
+        
+      <!-- AngularJs CDN Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+      <!-- CDN         -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    
+    </head>
+
+    <body data-ng-app = 'myApp' data-ng-controller = 'mainController'>
+        <div id = "main-div">
+            <div id = "center-div">
+                <h2> To Do List</h2>
+                <div data-ng-view > </div>
+                <div id = "input-div">
+                    <form >
+                        <input type = "text" data-ng-model = "itemName" placeholder=" Write item name" required>
+                        <button type = "submit" data-ng-click = "submit($event)">+</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src = "./app/Controllers/app.js"></script>
+        <script src = "./app/Controllers/addController.js"></script>
+        <script src = "./app/Controllers/getController.js"></script>
+    </body>
+</html>

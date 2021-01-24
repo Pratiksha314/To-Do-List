@@ -1,0 +1,45 @@
+<div  data-ng-repeat = " item in items| orderBy: '-' ">
+
+    <div id = "get-div">
+        <h3 class = "itemName-div"> {{item.itemName}} </h3>
+        <h5 class = "date-div">  ({{item.date}}) </h5>
+        <button type="button" class=" edit" data-toggle="modal" data-target="#myModalEdit" data-ng-click="editItem(item._id)"><i class="fa fa-pencil pen1" aria-hidden="true"></i></button>
+        <button type="button" class=" delete" data-toggle="modal" data-target="#myModal"><i class="fa fa-trash-o dustbin" aria-hidden="true"></i></button>
+    </div>
+
+    <div class="container"> 
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog"> 
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Are you sure you want to delete ?</h4>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" data-ng-click="deleteItem(item._id)">Yes</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container"> 
+      <div class="modal fade" id="myModalEdit" role="dialog">
+        <div class="modal-dialog">     
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Edit Your Item !!</h4>
+              <input class = 'edit-input' type="text" data-ng-model="itemName" placeholder="edit your item">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" data-ng-click="doneEdit($event, _id, itemName)">Done</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</div>

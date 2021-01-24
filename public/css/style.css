@@ -1,0 +1,57 @@
+#main-div , #center-div{
+    border-radius: 10px;
+    border: 2px solid rgb(77, 4, 4);
+}
+
+#main-div{
+    height: 95vh;
+    width: auto;
+    background-color: rgb(107, 13, 13);
+    position: relative;
+}
+
+#center-div{
+    min-height: 40vh;
+    width: 65%;
+    background-color: rgb(253, 255, 127);
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 18%;
+}
+
+#center-div h2{
+    font-family: 'Times New Roman';
+    font-weight: 800;
+    text-align: center;
+}
+
+#input-div{
+    height: 5vh;
+    width: 80%;
+    position: relative;
+    margin-left: 10%;
+    margin-top: 60%;
+}
+
+#input-div form input, #input-div form button{
+    height: 4vh;
+    outline: none;
+}
+
+#input-div form input{
+    width: 80%;
+    position: relative;
+    border: 2px solid rgb(77, 4, 4);
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#input-div form button{
+    width: 7vw;
+    position: absolute;
+    /* margin-top: 2px; */
+    margin-left: 12px;
+    border-radius: 4px;
+    font-size: larger;
+    font-weight: 700;
+}
