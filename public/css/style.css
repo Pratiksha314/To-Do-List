@@ -11,7 +11,7 @@
 }
 
 #center-div{
-    min-height: 40vh;
+    min-height: 20vh;
     width: 65%;
     background-color: rgb(253, 255, 127);
     position: absolute;
@@ -30,7 +30,7 @@
     width: 80%;
     position: relative;
     margin-left: 10%;
-    margin-top: 60%;
+    margin-top: 20%;
 }
 
 #input-div form input, #input-div form button{
@@ -54,4 +54,60 @@
     border-radius: 4px;
     font-size: larger;
     font-weight: 700;
+}
+
+/* tablet*/
+@media only screen and (min-width:768px){
+    #center-div{
+        min-height: 20vh;
+        width: 40%;
+        background-color: rgb(253, 255, 127);
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 35%;
+    }
+    #input-div{
+        height: 5vh;
+        width: 80%;
+        position: relative;
+        margin-left: 10%;
+        margin-top: 20%;
+    }
+    #input-div form button{
+        width: 4vw;
+        position: absolute;
+        /* margin-top: 2px; */
+        margin-left: 8px;
+        border-radius: 4px;
+        font-size: larger;
+        font-weight: 700;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width:1200px){
+    #center-div{
+        min-height: 20vh;
+        width: 30%;
+        background-color: rgb(253, 255, 127);
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 35%;
+    }
+    #input-div{
+        height: 5vh;
+        width: 80%;
+        position: relative;
+        margin-left: 10%;
+        margin-top: 20%;
+    }
+    #input-div form button{
+        width: 4vw;
+        position: absolute;
+        /* margin-top: 2px; */
+        margin-left: 12px;
+        border-radius: 4px;
+        font-size: larger;
+        font-weight: 700;
+    }
 }
