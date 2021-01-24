@@ -35,3 +35,11 @@ margin-left: 18%;
 .edit-input{
     margin-top: 5px;
 }
+
+@media only screen and (min-width:1200px){
+    #get-div{
+        width: 20vw;
+        display: inline-flex;  
+        margin-left: 25%;
+    }
+}
