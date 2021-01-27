@@ -1,7 +1,6 @@
 #get-div{
-width: 20vw;
-display: inline-flex;  
-margin-left: 18%;
+width: 50vw;
+margin-left: 15%;
 }
 
 .itemName-div{
@@ -9,22 +8,26 @@ margin-left: 18%;
     font-family: 'Times New Roman';
     font-weight: 700;
     font-size: 20px;
-    text-align: center;
+    word-wrap: break-word;
 }
 
 .date-div{
-    margin-left: 5px;
+    margin-left: 4px;
     margin-top: 24px;
+    font-size: medium;
     color: rgba(0, 0, 0, 0.637);
 }
 
 .edit, .delete{
     height: 30px;
-    margin-left: 12px;
+    margin-left: 8px;
     margin-top: 16px;
     outline: none;
     background-color: white;
     border: 1px solid rgb(180, 182, 60);
+}
+.delete{
+    margin-left: 5px;
 }
 .pen1{
     color: rgb(27, 105, 131)
@@ -36,10 +39,16 @@ margin-left: 18%;
     margin-top: 5px;
 }
 
+@media only screen and (min-width:768px){
+    #get-div{
+        width: 20vw;
+        margin-left: 25%;
+    }
+}
+
 @media only screen and (min-width:1200px){
     #get-div{
         width: 20vw;
-        display: inline-flex;  
         margin-left: 25%;
     }
 }
